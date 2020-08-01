@@ -1,12 +1,13 @@
-import React from "react"
+import React from "react";
 
-import { Heading, CallToAction, SmartLink } from "../components"
+import { Heading, CallToAction, SmartLink, YouTube } from "../components";
 
 // Include all components that will be parsed by MDX as React components here.
 // Any React component you'd like to allow your editors to use should be placed here.
 export const CMS_SHORTCODES = {
   CallToAction: props => <CallToAction {...props} />,
-}
+  YouTube: props => <YouTube {...props} />,
+};
 
 // Include any tags you'd like to replace with React components
 export const CMS_COMPONENTS = {
@@ -17,4 +18,4 @@ export const CMS_COMPONENTS = {
   h5: props => <Heading tag={5} {...props} />,
   h6: props => <Heading tag={6} {...props} />,
   a: props => <SmartLink {...props} />,
-}
+};
