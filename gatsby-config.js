@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby-MDX + Netlify-CMS Starter`,
-    description: `Starter for Gatsby-MDX + Netlify CMS`,
-    author: `@renvrant`,
+    title: `Gatsby MDX Netlify Docs`,
+    description: `Docs starter for Gatsby-MDX + Netlify CMS`,
+    author: `@codescurtis`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -18,14 +18,16 @@ module.exports = {
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
-        extensions: ['.mdx', '.md'],
+        extensions: [".mdx", ".md"],
         defaultLayouts: {
           // This entry template will switch the page template based on
           // a frontmatter value provided in the CMS, allowing users to
           // choose different template layouts.
-          default: require.resolve(`./src/page-templates/cms-entry.template.js`)
+          default: require.resolve(
+            `./src/page-templates/cms-entry.template.js`
+          ),
         },
-      }
+      },
     },
     {
       resolve: `gatsby-plugin-manifest`,
@@ -43,9 +45,17 @@ module.exports = {
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
     {
-      resolve: `gatsby-plugin-netlify-cms`,
+      resolve: "gatsby-plugin-netlify-cms",
       options: {
-        modulePath: `${__dirname}/src/cms/cms.js`, // for custom preview in the Netlify CMS
+        modulePath: `${__dirname}/src/cms/cms.js`,
+        customizeWebpackConfig: config => {
+          config.node = {
+            ...config.node,
+            fs: "empty",
+            child_process: "empty",
+            module: "empty",
+          }
+        },
       },
     },
   ],
