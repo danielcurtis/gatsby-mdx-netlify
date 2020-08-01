@@ -53,9 +53,17 @@ collections:
                   { label: URL, name: url, widget: string },
                 ],
             }
-  - name: "content"
-    label: "Content Pages"
-    folder: "src/pages/content"
+  - name: "docs"
+    label: "Doc Pages"
+    folder: "src/pages/docs"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "tutorial"
+    label: "Tutorial Pages"
+    folder: "src/pages/tutorial"
     create: true
     fields:
       - { label: "Title", name: "title", widget: "string" }
