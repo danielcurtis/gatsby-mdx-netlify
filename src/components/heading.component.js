@@ -1,8 +1,8 @@
-import React from "react"
+import React from "react";
 
 export const Heading = ({ tag, children }) => {
-  const Htag = `h${tag}`
-  return <Htag style={{ color: "rebeccapurple" }}>{children}</Htag>
-}
+  const Htag = `h${tag}`;
+  return <Htag>{children}</Htag>;
+};
 
-export default Heading
+export default Heading;

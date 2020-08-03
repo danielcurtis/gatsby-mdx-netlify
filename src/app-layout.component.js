@@ -17,23 +17,29 @@ export const AppLayout = ({ children, pageContext }) => (
       }
     `}
     render={data => {
+      const footerStyle = {
+        background: "#4B5566",
+        color: "white",
+        textAlign: "center",
+        padding: "30px 55px",
+      };
+
       return (
         <>
           <Header siteTitle={data.site.siteMetadata.title} />
           <Menu />
-          <div
-            style={{
-              margin: `0 auto`,
-              maxWidth: 960,
-              padding: `0px 1.0875rem 1.45rem`,
-              paddingTop: 0,
-            }}
-          >
-            <main>{children}</main>
-            <footer>
-              © {new Date().getFullYear()}, Built with
-              {` `}
-              <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <div>
+            <main className="Main-content">{children}</main>
+            <footer style={footerStyle}>
+              © {new Date().getFullYear()}. Built with{" "}
+              <a style={{ color: "white" }} href="https://www.gatsbyjs.org">
+                Gatsby
+              </a>{" "}
+              by{" "}
+              <a style={{ color: "white" }} href="https://www.curtiscodes.com">
+                Daniel Curtis
+              </a>
+              .
             </footer>
           </div>
         </>
