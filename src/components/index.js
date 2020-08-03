@@ -6,3 +6,4 @@ export * from "./seo";
 export * from "./image";
 export * from "./menu.component";
 export * from "./YouTube";
+export * from "./NextPrev";
