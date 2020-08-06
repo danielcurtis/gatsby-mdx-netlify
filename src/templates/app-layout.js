@@ -4,6 +4,7 @@ import { StaticQuery, graphql } from 'gatsby';
 
 import Header from '../components/header';
 import Menu from '../components/menu';
+import { MenuProvider } from '../core/menu-context';
 
 // Global application wrapper
 function AppLayout({ children, pageContext }) {
@@ -27,7 +28,7 @@ function AppLayout({ children, pageContext }) {
 				};
 
 				return (
-					<>
+					<MenuProvider>
 						<Header siteTitle={data.site.siteMetadata.title} />
 						<Menu />
 						<div>
@@ -46,7 +47,7 @@ function AppLayout({ children, pageContext }) {
 								.
 							</footer>
 						</div>
-					</>
+					</MenuProvider>
 				);
 			}}
 		/>

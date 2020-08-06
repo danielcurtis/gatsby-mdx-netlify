@@ -1,4 +1,5 @@
-.Main-menu {
+/* menu.js */
+.Menu {
 	border-right: 1px solid lightgrey;
 	position: fixed;
 	width: 220px;
@@ -8,17 +9,24 @@
 	background: white;
 	z-index: 10;
 }
-.Main-menu > ul {
+
+.Menu-hide {
+	display: none;
+}
+
+.Menu > ul {
 	list-style-type: none;
 	margin: 0;
 }
-.Main-menu > ul > li {
+
+.Menu > ul > li {
 	padding: 0;
 	margin: 6px 10px;
 	font-size: 14px;
 	font-weight: 500;
 }
-.Main-menu-btn {
+
+.Menu-btn {
 	margin-bottom: 7px;
 	cursor: pointer;
 }

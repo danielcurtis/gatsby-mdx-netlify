@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { graphql, StaticQuery, Link } from 'gatsby';
 import { safelyGetSiteConfig } from '../cms/cms-utils';
+
+import { MenuContext } from '../core/menu-context';
 
 export const query = graphql`
 	query {
@@ -18,11 +20,13 @@ export const query = graphql`
 `;
 
 function Menu() {
+	const { menu } = useContext(MenuContext);
+
 	return (
 		<StaticQuery
 			query={query}
 			render={(data) => {
-				const menu = safelyGetSiteConfig(data.sitePage).menu_nav || [];
+				const menuArr = safelyGetSiteConfig(data.sitePage).menu_nav || [];
 				const style = {
 					textDecoration: 'none',
 					paddingLeft: '12px',
@@ -33,9 +37,9 @@ function Menu() {
 				};
 
 				return (
-					<div className="Main-menu">
+					<div className={menu ? 'Menu' : 'Menu-hide'}>
 						<ul>
-							{menu.map((item, i) => (
+							{menuArr.map((item, i) => (
 								<li key={i}>
 									{item.url ? (
 										<Link to={item.url} style={style} activeStyle={activeStyle}>

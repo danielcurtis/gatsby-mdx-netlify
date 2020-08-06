@@ -1,7 +1,9 @@
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
-import React from 'react';
+import React, { useContext } from 'react';
+
 import { FiGithub, FiMenu } from 'react-icons/fi';
+import { MenuContext } from '../core/menu-context';
 
 function Header({ siteTitle }) {
 	const brandStyle = {
@@ -27,6 +29,8 @@ function Header({ siteTitle }) {
 		borderRadius: `4px`,
 	};
 
+	const { menu, toggleMenu } = useContext(MenuContext);
+
 	return (
 		<header
 			className="Testy-head"
@@ -50,7 +54,11 @@ function Header({ siteTitle }) {
 						style={{ marginLeft: `12px` }}>
 						<FiGithub />
 					</a>
-					<FiMenu style={{ marginLeft: `12px` }} className="Main-menu-btn" />
+					<FiMenu
+						onClick={() => toggleMenu(!menu)}
+						style={{ marginLeft: `12px` }}
+						className="Main-btn"
+					/>
 				</div>
 			</div>
 		</header>
