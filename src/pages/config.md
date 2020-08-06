@@ -1,17 +1,17 @@
 ---
-title: Gatsby-MDX + Netlify CMS
-desc: Gatsby-MDX + Netlify CMS Starter
+title: Gatsby-MDX + Netlify CMS Docs Starter
+desc: Gatsby-MDX + Netlify CMS Docs Starter
 menu_nav:
   - text: Tutorial
   - text: NoCMS MDX Page
-    url: /cms-unreachable
+    url: /pages/cms-unreachable
   - text: CMS created page
     url: /tutorial/example-content-creation
-  - text: Rockstar
-    url: /tutorial/rockstar
+  - text: Rickroll
+    url: /tutorial/rickroll
   - text: Documentation
   - text: CMS created page
     url: /docs/example-content-creation
-  - text: Rockstar
-    url: /docs/rockstar
+  - text: Rickroll
+    url: /docs/rickroll
 ---

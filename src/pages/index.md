@@ -1,6 +1,6 @@
 ---
 title: Home Page
-templateKey: "home-page"
+templateKey: 'home-page'
 sections:
   - body: >-
       Extended from the Gatsby starter, this starter aims to provide an example for using Gatsby-MDX with Netlify.
@@ -19,19 +19,17 @@ sections:
 
       * All the usual Gatsby + MDX stuff
 
-      <CallToAction url="https://github.com/renvrant/gatsby-mdx-netlify-cms-starter" align="center" bgColor="crimson">Check out the Repo</CallToAction>
-
     title: About This Starter
   - body: >-
       Go through each of these directories to understand the project and extend from it.
 
       * *src/cms* - Utilities for working with FrontMatter which Netlify CMS depends on, example previews and example widget registration. This folder also includes a whitelist of components that will be included in the MDX render scope in **cms-components.constants.js**.
 
-      * *src/components* - Components, mostly default with a few additions such as a call to action and a smart link.
+      * *src/components* - Components, mostly default with a few additions such smart link.
 
       * *src/core* - Core components to render markdown, catch errors
 
-      * *src/page-templates* - Templates for CMS pages and an entry template component that will be used to determine what template should be shown where. Look in particular at **cms-entry.template.js**
+      * *src/templates* - Templates for CMS pages and an entry template component that will be used to determine what template should be shown where. Look in particular at **cms-entry.js**
 
       * *src/pages* - Editor content. All CMS-created pages will live in the content directory. Other pages may be modified from the CMS, but cannot be created or deleted.
 

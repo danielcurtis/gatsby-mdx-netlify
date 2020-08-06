@@ -1,0 +1,24 @@
+.Main-menu {
+	border-right: 1px solid lightgrey;
+	position: fixed;
+	width: 220px;
+	height: 100%;
+	top: 69px;
+	overflow-y: scroll;
+	background: white;
+	z-index: 10;
+}
+.Main-menu > ul {
+	list-style-type: none;
+	margin: 0;
+}
+.Main-menu > ul > li {
+	padding: 0;
+	margin: 6px 10px;
+	font-size: 14px;
+	font-weight: 500;
+}
+.Main-menu-btn {
+	margin-bottom: 7px;
+	cursor: pointer;
+}

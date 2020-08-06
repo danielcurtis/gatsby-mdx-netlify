@@ -1,12 +1,14 @@
-import React from "react"
+import React from 'react';
 
-import AppLayout from "../app-layout.component"
-import NotFoundTemplate from "../page-templates/not-found.template"
+import AppLayout from '../templates/app-layout';
+import NotFoundTemplate from '../templates/not-found';
 
-const NotFoundPage = () => (
-  <AppLayout>
-    <NotFoundTemplate />
-  </AppLayout>
-)
+function NotFoundPage() {
+	return (
+		<AppLayout>
+			<NotFoundTemplate />
+		</AppLayout>
+	);
+}
 
-export default NotFoundPage
+export default NotFoundPage;

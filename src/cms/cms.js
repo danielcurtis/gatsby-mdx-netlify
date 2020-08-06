@@ -1,14 +1,11 @@
-import CMS from "netlify-cms-app";
+import CMS from 'netlify-cms-app';
 
-import { HomePagePreview, DefaultPagePreview } from "./preview-templates";
-import { ctaEditorConfig } from "./editor-components";
+import HomePagePreview from './preview-templates/home-page';
+import DefaultPagePreview from './preview-templates/default-page';
 
 // Not reliably loaded by registerPreviewStyle, so import directly
-import "../app.css";
+import '../app.css';
 
 // Add Previews
-CMS.registerPreviewTemplate("home", HomePagePreview);
-CMS.registerPreviewTemplate("docs", DefaultPagePreview);
-
-// Extend editor
-CMS.registerEditorComponent(ctaEditorConfig);
+CMS.registerPreviewTemplate('home', HomePagePreview);
+CMS.registerPreviewTemplate('docs', DefaultPagePreview);
