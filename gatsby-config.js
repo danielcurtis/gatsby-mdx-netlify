@@ -5,6 +5,8 @@ module.exports = {
 		author: `@codescurtis`,
 	},
 	plugins: [
+		`gatsby-plugin-dark-mode`,
+		`@pauliescanlon/gatsby-mdx-embed`,
 		`gatsby-plugin-react-helmet`,
 		{
 			resolve: `gatsby-source-filesystem`,
@@ -41,6 +43,16 @@ module.exports = {
 				icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
 			},
 		},
+		{
+			resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // The property ID; the tracking code won't be generated without it
+				trackingId: "YOUR_GOOGLE_ANALYTICS_TRACKING_ID",
+				// Defines where to place the tracking script - `true` in the head and `false` in the body
+				head: false,
+				// Avoids sending pageview hits from custom paths
+				exclude: ["/admin/**"],
+		}
 		// this (optional) plugin enables Progressive Web App + Offline functionality
 		// To learn more, visit: https://gatsby.app/offline
 		// 'gatsby-plugin-offline',
