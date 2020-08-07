@@ -2,38 +2,40 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 
-function NextPrev({ nextUrl, prevUrl, next, prev }) {
-	const style = {
-		display: `flex`,
-		justifyContent: `space-between`,
-	};
-	const linkStyle = {
-		padding: `12px`,
-		textDecoration: `none`,
-	};
-
+function NextPrev({ prev, prevUrl, next, nextUrl }) {
 	return (
-		<div style={style}>
-			<Link to={prevUrl} style={linkStyle}>
-				<small>
-					<strong>Previous:</strong>
-				</small>
-				<br />
-				{prev}
-			</Link>
-			<Link to={nextUrl} style={linkStyle}>
-				<small>
-					<strong>Next:</strong>
-				</small>
-				<br />
-				{next}
-			</Link>
+		<div className="NextPrev">
+			{prev === '' ? (
+				<div />
+			) : (
+				<Link className="NextPrev-link" to={prevUrl} className="NextPrev-link">
+					<small>
+						<strong>Previous:</strong>
+					</small>
+					<br />
+					{prev}
+				</Link>
+			)}
+			{next === '' ? (
+				<div />
+			) : (
+				<Link className="NextPrev-link" to={nextUrl}>
+					<small>
+						<strong>Next:</strong>
+					</small>
+					<br />
+					{next}
+				</Link>
+			)}
 		</div>
 	);
 }
 
 NextPrev.propTypes = {
-	url: PropTypes.string.isRequired,
+	prev: PropTypes.string.isRequired,
+	prevUrl: PropTypes.string.isRequired,
+	next: PropTypes.string.isRequired,
+	nextUrl: PropTypes.string.isRequired,
 };
 
 export default NextPrev;

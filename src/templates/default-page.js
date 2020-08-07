@@ -9,7 +9,7 @@ import RenderMarkdown from '../core/render-markdown';
 
 function DefaultPageTemplate({ title, body, children }) {
 	return (
-		<article style={{ marginTop: `70px` }}>
+		<article>
 			<SEO title={withFallback(title, '')} />
 			<Heading tag={1}>{title}</Heading>
 			{/* If children should be used instead of body, body will be empty, so it's safe to have both */}

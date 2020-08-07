@@ -4,7 +4,7 @@ import { StaticQuery, graphql } from 'gatsby';
 
 import Header from '../components/header';
 import Menu from '../components/menu';
-import { MenuProvider } from '../core/menu-context';
+import Footer from '../components/footer';
 
 // Global application wrapper
 function AppLayout({ children, pageContext }) {
@@ -20,34 +20,13 @@ function AppLayout({ children, pageContext }) {
 				}
 			`}
 			render={(data) => {
-				const footerStyle = {
-					background: '#4B5566',
-					color: 'white',
-					textAlign: 'center',
-					padding: '30px 55px',
-				};
-
 				return (
-					<MenuProvider>
+					<>
 						<Header siteTitle={data.site.siteMetadata.title} />
 						<Menu />
-						<div>
-							<main className="Main-content">{children}</main>
-							<footer style={footerStyle}>
-								© {new Date().getFullYear()}. Built with{' '}
-								<a style={{ color: 'white' }} href="https://www.gatsbyjs.org">
-									Gatsby
-								</a>{' '}
-								by{' '}
-								<a
-									style={{ color: 'white' }}
-									href="https://www.curtiscodes.com">
-									Daniel Curtis
-								</a>
-								.
-							</footer>
-						</div>
-					</MenuProvider>
+						<main className="AppLayout-main">{children}</main>
+						<Footer />
+					</>
 				);
 			}}
 		/>

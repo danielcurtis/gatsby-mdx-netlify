@@ -1,6 +1,18 @@
-.Main-content {
-	margin: 0 250px;
+.AppLayout-main {
+	margin: 100px auto 0 auto;
 	max-width: 960px;
-	min-height: 91vh;
-	padding: 1.45rem 1.0875rem;
+	min-height: 85vh;
+	padding: 8px;
+}
+
+@media only screen and (max-width: 1400px) {
+	.AppLayout-main {
+		margin: 120px auto 0 220px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.AppLayout-main {
+		margin: 140px auto 0 auto;
+	}
 }
