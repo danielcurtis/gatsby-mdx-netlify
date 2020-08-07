@@ -2,13 +2,13 @@ import React from 'react';
 
 import Heading from '../components/heading';
 import SmartLink from '../components/smart-link';
-import YouTube from '../components/youtube';
+import Repl from '../components/repl';
 import NextPrev from '../components/next-prev';
 
 // Include all components that will be parsed by MDX as React components here.
 // Any React component you'd like to allow your editors to use should be placed here.
 const CMS_SHORTCODES = {
-	YouTube: (props) => <YouTube {...props} />,
+	Repl: (props) => <Repl {...props} />,
 	NextPrev: (props) => <NextPrev {...props} />,
 };
 
