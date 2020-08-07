@@ -36,7 +36,7 @@ function DefaultPageTemplate({ title, body, children }) {
 	}
 
 	return (
-		<article>
+		<article className="DefaultPageTemplate">
 			<SEO title={withFallback(title, '')} />
 			<TableContents contents={h2Links} />
 			<Heading tag={1}>{title}</Heading>

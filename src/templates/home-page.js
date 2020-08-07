@@ -1,25 +1,70 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { Link } from 'gatsby';
 
 import Heading from '../components/heading';
 import SEO from '../components/seo';
 import RenderMarkdown from '../core/render-markdown';
-import { safelyGetFrontMatter, withFallback } from '../cms/cms-utils';
+import { safelyGetFrontMatter } from '../cms/cms-utils';
+import { MenuContext } from '../core/menu-context';
 
 function HomePageTemplate({ title, sections }) {
+	const { toggleMenu } = useContext(MenuContext);
+
 	return (
-		<article>
+		<div className="HomePageTemplate">
 			<SEO title={title} />
-			<Heading tag={1}>{title}</Heading>
-			{withFallback(sections, []).map((section, i) => {
-				return (
-					<section key={i}>
-						<h2>{section.title}</h2>
-						<RenderMarkdown md={section.body} />
-						<hr />
-					</section>
-				);
-			})}
-		</article>
+
+			<section className="HomePageTemplate-top">
+				<Heading tag={1}>{title}</Heading>
+				<div>
+					<Link to="/docs/hello-world" onClick={() => toggleMenu(true)}>
+						<button className="HomePageTemplate-btn">Fake Documentation</button>
+					</Link>
+					<Link
+						to="/tutorial/1-introduction-mdx"
+						onClick={() => toggleMenu(true)}>
+						<button className="HomePageTemplate-btn">Take the Tutorial</button>
+					</Link>
+				</div>
+			</section>
+
+			<div className="HomePageTemplate-sections">
+				<section className="HomePageTemplate-section">
+					<Heading tag={4}>{sections[0].title}</Heading>
+					<RenderMarkdown md={sections[0].body} />
+				</section>
+				<section className="HomePageTemplate-section">
+					<Heading tag={4}>{sections[1].title}</Heading>
+					<RenderMarkdown md={sections[1].body} />
+				</section>
+				<section className="HomePageTemplate-section">
+					<Heading tag={4}>{sections[2].title}</Heading>
+					<RenderMarkdown md={sections[2].body} />
+				</section>
+			</div>
+
+			<section className="HomePageTemplate-landing">
+				<div className="HomePageTemplate-title">
+					<Heading tag={2}>{sections[3].title}</Heading>
+					<p>{sections[3].description}</p>
+					<Link to={sections[3].link}>
+						<button
+							className="HomePageTemplate-landing-btn"
+							onClick={() => toggleMenu(true)}>
+							{sections[3].button}
+						</button>
+					</Link>
+				</div>
+				<div className="HomePageTemplate-item">
+					<RenderMarkdown md={sections[3].body} />
+				</div>
+			</section>
+
+			<section className="HomePageTemplate-bottom">
+				<Heading tag={2}>{sections[4].title}</Heading>
+				<RenderMarkdown md={sections[4].body} />
+			</section>
+		</div>
 	);
 }
 

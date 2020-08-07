@@ -7,7 +7,7 @@ import Menu from '../components/menu';
 import Footer from '../components/footer';
 
 // Global application wrapper
-function AppLayout({ children, pageContext }) {
+function AppLayout({ children }) {
 	return (
 		<StaticQuery
 			query={graphql`
@@ -24,7 +24,7 @@ function AppLayout({ children, pageContext }) {
 					<>
 						<Header siteTitle={data.site.siteMetadata.title} />
 						<Menu />
-						<main className="AppLayout-main">{children}</main>
+						<main>{children}</main>
 						<Footer />
 					</>
 				);
