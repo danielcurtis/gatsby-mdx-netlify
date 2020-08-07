@@ -106,4 +106,4 @@ didn’t take long until a few insidious Copy Writers ambushed her, made her dru
 with Longe and Parole and dragged her into their agency, where they abused her
 for their projects again and again.
 
-<NextPrev prev="My Second Post" prevUrl="/docs/my-second-post" />
+<NextPrev prev="Hello World" prevUrl="/docs/hello-world" />

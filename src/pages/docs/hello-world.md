@@ -20,4 +20,4 @@ Oh, and here's a great quote from this Wikipedia on
 
 ![Chinese Salty Egg](https://github.com/gatsbyjs/gatsby-starter-blog/raw/master/content/blog/hello-world/salty_egg.jpg)
 
-<NextPrev next="My Second Post" nextUrl="/docs/my-second-post" />
+<NextPrev prev="Get Started" prevUrl="/docs/get-started" next="New Beginnings" nextUrl="/docs/new-beginnings" />

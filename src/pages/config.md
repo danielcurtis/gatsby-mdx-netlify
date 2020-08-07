@@ -8,6 +8,14 @@ menu_nav:
   - text: About
     url: /about
 
+  - text: Documentation
+  - text: Get Started
+    url: /docs/get-started
+  - text: Hello World
+    url: /docs/hello-world
+  - text: New Beginnings
+    url: /docs/new-beginnings
+
   - text: Tutorial
   - text: 1. Introduction to MDX
     url: /tutorial/1-introduction-mdx
@@ -15,12 +23,4 @@ menu_nav:
     url: /tutorial/2-using-netlify-cms
   - text: 3. Using Gatsby
     url: /tutorial/3-using-gatsby
-
-  - text: Documentation
-  - text: Hello World
-    url: /docs/hello-world
-  - text: My Second Post
-    url: /docs/my-second-post
-  - text: New Beginnings
-    url: /docs/new-beginnings
 ---

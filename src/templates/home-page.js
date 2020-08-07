@@ -17,8 +17,8 @@ function HomePageTemplate({ title, sections }) {
 			<section className="HomePageTemplate-top">
 				<Heading tag={1}>{title}</Heading>
 				<div>
-					<Link to="/docs/hello-world" onClick={() => toggleMenu(true)}>
-						<button className="HomePageTemplate-btn">Fake Documentation</button>
+					<Link to="/docs/get-started" onClick={() => toggleMenu(true)}>
+						<button className="HomePageTemplate-btn">Get Started</button>
 					</Link>
 					<Link
 						to="/tutorial/1-introduction-mdx"
@@ -30,15 +30,15 @@ function HomePageTemplate({ title, sections }) {
 
 			<div className="HomePageTemplate-sections">
 				<section className="HomePageTemplate-section">
-					<Heading tag={4}>{sections[0].title}</Heading>
+					<Heading tag={2}>{sections[0].title}</Heading>
 					<RenderMarkdown md={sections[0].body} />
 				</section>
 				<section className="HomePageTemplate-section">
-					<Heading tag={4}>{sections[1].title}</Heading>
+					<Heading tag={2}>{sections[1].title}</Heading>
 					<RenderMarkdown md={sections[1].body} />
 				</section>
 				<section className="HomePageTemplate-section">
-					<Heading tag={4}>{sections[2].title}</Heading>
+					<Heading tag={2}>{sections[2].title}</Heading>
 					<RenderMarkdown md={sections[2].body} />
 				</section>
 			</div>

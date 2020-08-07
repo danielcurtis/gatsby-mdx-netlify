@@ -9,9 +9,9 @@ description: How to use Gatsby in this starter
 
 1. [Set up your dev environment](https://www.gatsbyjs.org/tutorial/part-zero/).
 2. TLDR step 1: `npm install -g gatsby-cli`
-3. Install the starter: `gatsby new gatsby-netlifycms-docs-starter https://github.com/gatsbyjs/gatsby-netlifycms-docs-starter`
-4. Switch into the new directory: `cd gatsby-netlifycms-docs-starter`
-5. Run the local dev server: `gatsby build`
+3. Install the starter: `gatsby new gatsby-starter-netlify-docs https://github.com/danielcurtis/gatsby-starter-netlify-docs`
+4. Switch into the new directory: `cd gatsby-starter-netlify-docs`
+5. Run the local dev server: `gatsby develop`
 
 ## Code Configuration:
 

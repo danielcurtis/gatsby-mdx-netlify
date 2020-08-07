@@ -26,7 +26,7 @@ programmatically, like Gatsby's blog does. So instead I pass in the title and UR
 <NextPrev prev="Page 1" prevUrl="/page/1" next="Page 3" nextUrl="/page/3" />
 ```
 
-Only pass in one set of props if you do not have a next or previous page, as shown above in the first example. 
+Only pass in one set of props if you do not have a next or previous page, as shown above in the first example.
 
 **Example:**
 
@@ -91,11 +91,11 @@ function logStr(str) {
 
 **Syntax:**
 
-`<YouTube youTubeId="WUgvvPRH7Oc" />`
+`<YouTube youTubeId="OXRVnZNmT-k" />`
 
 **Example:**
 
-<YouTube youTubeId="WUgvvPRH7Oc" />
+<YouTube youTubeId="OXRVnZNmT-k" />
 
 ## SoundCloud
 
