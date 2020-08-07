@@ -7,7 +7,7 @@ function NextPrev({ prev, prevUrl, next, nextUrl }) {
 			{prev === undefined ? (
 				<div />
 			) : (
-				<Link className="NextPrev-link" to={prevUrl} className="NextPrev-link">
+				<Link className="NextPrev-link" to={prevUrl}>
 					<small>
 						<strong>Previous:</strong>
 					</small>

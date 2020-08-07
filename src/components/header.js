@@ -15,41 +15,49 @@ function Header({ siteTitle }) {
 				<Link className="Header-link" to="/">
 					{siteTitle}
 				</Link>
-				<input className="Header-input" placeholder="Search" />
+				<input
+					aria-label="Search"
+					className="Header-input"
+					placeholder="Search"
+				/>
 			</div>
 			<div className="Header-flex">
-				<small>v1.0</small>
+				<small className="Header-small">v1.0</small>
 				<a
-					href="https://github.com/danielcurtis/gatsby-mdx-netlify"
+					aria-label="GitHub"
+					href="https://github.com/danielcurtis/gatsby-starter-netlify-docs"
 					target="_blank"
 					rel="noreferrer"
 					className="Header-flex">
 					<FiGithub className="Header-icon" />
 				</a>
-				<ThemeToggler>
+				<ThemeToggler type="button" tabIndex={0}>
 					{({ theme, toggleTheme }) => (
 						<div className="Header-flex">
 							{theme === 'dark' ? (
-								<FiSun
-									className="Header-icon"
-									role="button"
-									onClick={() => toggleTheme('light')}
-								/>
+								<button
+									aria-label="Light mode"
+									className="Header-btn"
+									onClick={() => toggleTheme('light')}>
+									<FiSun className="Header-icon" />
+								</button>
 							) : (
-								<FiMoon
-									className="Header-icon"
-									role="button"
-									onClick={() => toggleTheme('dark')}
-								/>
+								<button
+									aria-label="Dark mode"
+									className="Header-btn"
+									onClick={() => toggleTheme('dark')}>
+									<FiMoon className="Header-icon" />
+								</button>
 							)}
 						</div>
 					)}
 				</ThemeToggler>
-				<FiMenu
-					className="Header-icon"
-					role="button"
-					onClick={() => toggleMenu(!menu)}
-				/>
+				<button
+					aria-label="Toggle menu"
+					className="Header-btn"
+					onClick={() => toggleMenu(!menu)}>
+					<FiMenu className="Header-icon" />
+				</button>
 			</div>
 		</header>
 	);

@@ -234,6 +234,7 @@ h1 {
 }
 h2 {
 	font-size: 1.62671rem;
+	scroll-margin-top: 100px;
 }
 h3 {
 	font-size: 1.38316rem;

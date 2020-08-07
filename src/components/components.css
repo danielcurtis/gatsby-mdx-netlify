@@ -46,10 +46,21 @@
 	align-items: center;
 }
 
+.Header-small {
+	margin: auto 8px;
+}
+
 .Header-icon {
-	margin-left: 8px;
+	margin: auto 8px;
 	cursor: pointer;
 	color: var(--link);
+}
+
+.Header-btn {
+	background: rgba(0, 0, 0, 0);
+	border: none;
+	margin: 0;
+	padding: 0;
 }
 
 /* menu.js */
@@ -132,5 +143,9 @@
 		margin-left: 0px;
 		margin-top: 8px;
 		display: block;
+	}
+	.Header-icon,
+	.Header-small {
+		margin: auto 5px;
 	}
 }
