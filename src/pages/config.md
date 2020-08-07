@@ -1,17 +1,26 @@
 ---
-title: Gatsby-MDX + Netlify CMS Docs Starter
-desc: Gatsby-MDX + Netlify CMS Docs Starter
+title: MDX Netlify CMS Docs
+desc: MDX Netlify CMS Docs
 menu_nav:
+  - text: Navigation
+  - text: Home
+    url: /
+  - text: About
+    url: /about
+
   - text: Tutorial
-  - text: NoCMS MDX Page
-    url: /pages/cms-unreachable
-  - text: CMS created page
-    url: /tutorial/example-content-creation
-  - text: Rickroll
-    url: /tutorial/rickroll
+  - text: 1. Introduction to MDX
+    url: /tutorial/1-introduction-mdx
+  - text: 2. Using Netlify CMS
+    url: /tutorial/2-using-netlify-cms
+  - text: 3. Using Gatsby
+    url: /tutorial/3-using-gatsby
+
   - text: Documentation
-  - text: CMS created page
-    url: /docs/example-content-creation
-  - text: Rickroll
-    url: /docs/rickroll
+  - text: Hello World
+    url: /docs/hello-world
+  - text: My Second Post
+    url: /docs/my-second-post
+  - text: New Beginnings
+    url: /docs/new-beginnings
 ---
