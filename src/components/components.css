@@ -103,6 +103,27 @@
 	text-decoration: none;
 }
 
+/* table-contents.js */
+.TableContents {
+	position: fixed;
+	right: 50px;
+	display: flex;
+	flex-direction: column;
+	padding-left: 18px;
+	border-left: solid 2px var(--grey);
+}
+
+.TableContents-link {
+	text-decoration: none;
+	color: var(--text);
+}
+
+@media only screen and (max-width: 1400px) {
+	.TableContents {
+		display: none;
+	}
+}
+
 @media only screen and (max-width: 600px) {
 	.Menu {
 		top: 0;

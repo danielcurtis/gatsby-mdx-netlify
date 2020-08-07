@@ -62,4 +62,4 @@ Uses [Netlify CMS](https://netlifycms.org). Plugin your repo in **/static/admin/
 
 Uses [React Icons](https://react-icons.github.io/react-icons/).
 
-<NextPrev prev="2. Introduction to MDX" prevUrl="/tutorial/2-using-netlify-cms" next="" nextUrl="" />
+<NextPrev prev="2. Introduction to MDX" prevUrl="/tutorial/2-using-netlify-cms" />

@@ -1,11 +1,10 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 
 function NextPrev({ prev, prevUrl, next, nextUrl }) {
 	return (
 		<div className="NextPrev">
-			{prev === '' ? (
+			{prev === undefined ? (
 				<div />
 			) : (
 				<Link className="NextPrev-link" to={prevUrl} className="NextPrev-link">
@@ -16,7 +15,7 @@ function NextPrev({ prev, prevUrl, next, nextUrl }) {
 					{prev}
 				</Link>
 			)}
-			{next === '' ? (
+			{next === undefined ? (
 				<div />
 			) : (
 				<Link className="NextPrev-link" to={nextUrl}>
@@ -30,12 +29,5 @@ function NextPrev({ prev, prevUrl, next, nextUrl }) {
 		</div>
 	);
 }
-
-NextPrev.propTypes = {
-	prev: PropTypes.string.isRequired,
-	prevUrl: PropTypes.string.isRequired,
-	next: PropTypes.string.isRequired,
-	nextUrl: PropTypes.string.isRequired,
-};
 
 export default NextPrev;

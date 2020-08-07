@@ -20,14 +20,17 @@ programmatically, like Gatsby's blog does. So instead I pass in the title and UR
 **Syntax:**
 
 ```js
-<NextPrev prev="Title" prevUrl="relative/url" next="" nextUrl="" />
+// Only prev button
+<NextPrev prev="Page 1" prevUrl="/page/1" />
+// Both prev and next buttons
+<NextPrev prev="Page 1" prevUrl="/page/1" next="Page 3" nextUrl="/page/3" />
 ```
 
-Leave the prev or next title's and url's as empty strings as shown above if there is not a next page.
+Only pass in one set of props if you do not have a next or previous page, as shown above in the first example. 
 
 **Example:**
 
-<NextPrev prev="Title" prevUrl="/docs/hello-world" next="" nextUrl="" />
+<NextPrev prev="Page 1" prevUrl="/tutorial/1-introduction-mdx" />
 
 ## Repl.it
 
@@ -107,4 +110,4 @@ function logStr(str) {
 For more embeds, check the [gatsby-mdx-embed docs](https://gatsby-mdx-embed.netlify.app/) or create
 one similar to the Repl.it example!
 
-<NextPrev prev="" prevUrl="" next="2. Using Netlify CMS" nextUrl="/tutorial/2-using-netlify-cms" />
+<NextPrev next="2. Using Netlify CMS" nextUrl="/tutorial/2-using-netlify-cms" />
