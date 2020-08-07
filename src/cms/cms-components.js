@@ -1,3 +1,6 @@
+// Disabling eslist because heading warning does not apply
+/* eslint-disable */
+
 import React from 'react';
 
 import Heading from '../components/heading';
