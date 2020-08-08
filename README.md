@@ -4,11 +4,14 @@ An accessible and _blazing_ fast documentation starter for Gatsby integrated wit
 
 Spend more time building and less time on docs! [Live Demo](https://mdx-cms-docs.netlify.app)
 
+![screenshot of website](./screenshot.png)
+
 ## Features
 
 - 📖 &nbsp; Netlify CMS for Managing Content
 - 😎 &nbsp; All of the **Awesome** Benefits of Gatsby MDX
 - ♿ &nbsp; Accessible and Fast. Scores 100's in every Lighthouse Category
+- 🖥️ &nbsp; Landing Page Fully-Configurable from Netlify CMS
 - 🧭 &nbsp; Table of Contents Sub-Menu & Toggleable Main-Menu
 - ⏭️ &nbsp; Configurable Next & Previous Buttons
 - 🧛‍♀️ &nbsp; Dark Mode
