@@ -8,7 +8,7 @@ import SEO from '../components/seo';
 import TableContents from '../components/table-contents';
 import RenderMarkdown from '../core/render-markdown';
 
-function DefaultPageTemplate({ title, body, children }) {
+function DefaultPageTemplate({ location, title, body, children }) {
 	const createLinkPair = (name, url) => {
 		const regex = /.*\/\/.*(\.|:)(\w*|\d*)/gi;
 		let link = url.replace(regex, '');
@@ -29,7 +29,10 @@ function DefaultPageTemplate({ title, body, children }) {
 		for (let i = 0; i < children.length; i++) {
 			if (children[i].props.mdxType === 'h2') {
 				h2Links.push(
-					createLinkPair(children[i].props.children, window.location.href)
+					createLinkPair(
+						children[i].props.children,
+						location.href ? location.href : ''
+					)
 				);
 			}
 		}
