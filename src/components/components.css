@@ -22,6 +22,7 @@
 	width: 100vw;
 	top: 0;
 	background: var(--bg);
+	z-index: 2;
 }
 
 .Header-link {
