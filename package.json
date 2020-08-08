@@ -1,7 +1,7 @@
 {
-	"name": "gatsby-mdx-netlify",
+	"name": "gatsby-starter-netlify-docs",
 	"private": true,
-	"description": "Docs starter for Gatsby-MDX + Netlify CMS",
+	"description": "Documentation starter for Gatsby-MDX + Netlify CMS",
 	"version": "1.0.0",
 	"author": "Daniel Curtis",
 	"dependencies": {
