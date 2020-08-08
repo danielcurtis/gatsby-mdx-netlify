@@ -4,7 +4,9 @@ An accessible and _blazing_ fast documentation starter for Gatsby integrated wit
 
 Spend more time building and less time on docs! [Live Demo](https://mdx-cms-docs.netlify.app)
 
-![screenshot of website](./screenshot.png)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/dc60d64b-ffee-48d4-ba2d-5be6cb31e470/deploy-status)](https://app.netlify.com/sites/mdx-cms-docs/deploys)
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/danielcurtis/gatsby-starter-netlify-docs)
 
 ## Features
 
@@ -50,6 +52,10 @@ The starter will start up at [localhost:8000](http://localhost:8000).
 
 After committing, you can start the project up again with `gatsby develop` and you should get an output from the CLI for the URL to visit the CMS UI.
 
+You should be able to access the CMS locally and make changes. Changes are pushed directly to main, so you'll have to pull them from origin to see them.
+
+In production, you can make changes at https://your-awesome-site/admin. Netlify CMS uses GitHub for authentication. You'll have to get API keys from GitHub, [as described in Netlify's docs.](https://docs.netlify.com/visitor-access/oauth-provider-tokens/#using-an-authentication-provider)
+
 ## Contributing
 
 I'm definitely open to contributions! I'd love to see this project grow beyond me. However, not every PR will be merged. The general guidelines for contributing are:
@@ -65,5 +71,6 @@ Please, create an issue before spending too much time on a PR so we can discuss 
 
 ## Roadmap
 
-- Resolve Security Warnings
-- Add tests
+- [x] Add syntax highlighting _v1.0.1_
+- [ ] Resolve Security Warnings
+- [ ] Add tests
