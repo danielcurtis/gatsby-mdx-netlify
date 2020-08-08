@@ -8,6 +8,7 @@ body {
 	--text: #000000cc;
 	--grey: #4b5566;
 	--lightgrey: #ebedf0;
+	--codebg: #fafaff;
 	--gradient: linear-gradient(
 		180deg,
 		rgba(255, 255, 255, 1) 0%,
@@ -21,6 +22,7 @@ body.dark {
 	--text: #e8e6e3cc;
 	--grey: #3c4452;
 	--lightgrey: #3c4144;
+	--codebg: #bfbfca;
 	--gradient: linear-gradient(
 		180deg,
 		rgba(60, 68, 82, 1) 0%,

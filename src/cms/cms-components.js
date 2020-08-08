@@ -7,6 +7,7 @@ import Heading from '../components/heading';
 import SmartLink from '../components/smart-link';
 import Repl from '../components/repl';
 import NextPrev from '../components/next-prev';
+import CodeBlock from '../components/code-block';
 
 // Include all components that will be parsed by MDX as React components here.
 // Any React component you'd like to allow your editors to use should be placed here.
@@ -26,6 +27,7 @@ const CMS_COMPONENTS = {
 	h5: (props) => <Heading tag={5} {...props} />,
 	h6: (props) => <Heading tag={6} {...props} />,
 	a: (props) => <SmartLink {...props} />,
+	pre: (props) => <CodeBlock {...props} />,
 };
 
 export { CMS_SHORTCODES, CMS_COMPONENTS };

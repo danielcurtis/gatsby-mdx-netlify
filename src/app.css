@@ -273,17 +273,6 @@ address {
 	margin: 0 0 1.45rem 0;
 	padding: 0;
 }
-pre {
-	margin: 0 0 1.45rem 0;
-	font-size: 0.85rem;
-	line-height: 1.42;
-	background: var(--lightgrey);
-	color: var(--text);
-	border-radius: 8px;
-	overflow: auto;
-	word-wrap: normal;
-	padding: 1.45rem;
-}
 table {
 	font-size: 1rem;
 	line-height: 1.45rem;
@@ -380,7 +369,7 @@ td:last-child {
 }
 tt,
 code {
-	background-color: var(--lightgrey);
+	background-color: var(--codebg);
 	color: var(--text);
 	border-radius: 3px;
 	font-family: 'SFMono-Regular', Consolas, 'Roboto Mono', 'Droid Sans Mono',
