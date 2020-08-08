@@ -13,6 +13,7 @@
 
 .HomePageTemplate-top {
 	background: var(--gradient);
+	padding: 20px;
 	height: 500px;
 	display: flex;
 	flex-direction: column;

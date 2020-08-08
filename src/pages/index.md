@@ -3,7 +3,7 @@ title: Gatsby MDX Netlify CMS Documentation Starter
 templateKey: 'home-page'
 sections:
   - body: >-
-      Extended from the Gatsby MDX Netlify CMS starter, this starter aims to provide a minimalist design without sacrificing functionality.
+      Extended from the Gatsby MDX Netlify CMS starter, this starter aims to provide a minimalist documentation webapp without sacrificing functionality.
     title: About This Starter
   - body: >-
       The project uses plain CSS files, with about 600 lines total of CSS. React Context is used for the menu toggle.
