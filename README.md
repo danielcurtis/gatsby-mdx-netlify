@@ -17,6 +17,7 @@ Spend more time building and less time on docs! [Live Demo](https://mdx-cms-docs
 - 🧭 &nbsp; Table of Contents Sub-Menu & Toggleable Main-Menu
 - ⏭️ &nbsp; Configurable Next & Previous Buttons
 - 🧛‍♀️ &nbsp; Dark Mode
+- 📝 &nbsp; GitHub-themed Syntax Highlighting
 - 📱 &nbsp; 100% Repsponsive
 - 📊 &nbsp; Google Anayltics
 - 👩‍💻 &nbsp; Functional Components & React Hooks
@@ -72,5 +73,5 @@ Please, create an issue before spending too much time on a PR so we can discuss 
 ## Roadmap
 
 - [x] Add syntax highlighting _v1.0.1_
-- [ ] Resolve Security Warnings
+- [ ] Resolve Security Warnings: Requires PR, see [https://github.com/gatsbyjs/gatsby/issues/26128](https://github.com/gatsbyjs/gatsby/issues/26128)
 - [ ] Add tests
